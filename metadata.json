@@ -1,0 +1,6 @@
+{
+  "name": "Nuha patisserie and café",
+  "description": "Premium landing page for Nuha patisserie and café, a modern luxury pastry shop and cafe featuring warm ambience, rich espresso, and craft pastries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
