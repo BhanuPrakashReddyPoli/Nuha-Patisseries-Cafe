@@ -3,7 +3,7 @@ export interface MenuItem {
   name: string;
   description: string;
   price: number;
-  category: "espresso" | "brewed" | "specialty" | "cold";
+  category: "espresso" | "Frappucino Blends" | "Pancake" | "Toast and Sandwich";
   isSignature?: boolean;
 }
 

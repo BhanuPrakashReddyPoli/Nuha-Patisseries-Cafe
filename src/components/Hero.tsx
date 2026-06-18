@@ -120,7 +120,7 @@ export default function Hero() {
             className="absolute top-0 right-1 sm:right-6 w-[82%] sm:w-80 h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-10 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop"
+              src="assets/FrontDesk.jpeg"
               alt="Nuha patisserie and café Interior Ambience"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
@@ -141,14 +141,15 @@ export default function Hero() {
             className="absolute bottom-4 left-2 sm:left-4 w-[65%] sm:w-64 h-[220px] sm:h-[240px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-20 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop"
+              src="assets/item6_Coffee.jfif"
+              //src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop"
               alt="Specialty latte art at Nuha patisserie and café"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 right-4">
-              <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1">Craftsmanship</span>
+              <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1"></span>
               <p className="font-serif text-sm font-semibold text-white leading-snug">The Golden Cappuccino</p>
             </div>
           </motion.div>
@@ -161,15 +162,16 @@ export default function Hero() {
             className="absolute bottom-16 right-4 w-[40%] sm:w-44 h-[160px] sm:h-[180px] rounded-xl overflow-hidden shadow-2xl border border-luxury-gold-500/10 z-25 hover:border-luxury-gold-400/40 duration-500 hidden sm:block"
           >
             <img
-              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop"
-              alt="Warm chocolate croissants croissant pastry"
+              src="assets/tiramisu.jfif"
+              //src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop"
+              alt="Coffee kissed tiramisu at Nuha patisserie and café"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-3 left-3 right-3">
               <span className="font-mono text-[8px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-0.5">Kitchen</span>
-              <p className="font-serif text-xs font-semibold text-white leading-none">Flaky Viennoiserie</p>
+              <p className="font-serif text-xs font-semibold text-white leading-none">Tiramisu French Toast</p>
             </div>
           </motion.div>
         </div>

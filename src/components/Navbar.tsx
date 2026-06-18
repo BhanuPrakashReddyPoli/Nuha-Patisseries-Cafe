@@ -75,7 +75,7 @@ export default function Navbar() {
                 <span className="font-amsterdam text-lg text-luxury-gold-300 capitalize leading-none">café</span>
               </span>
               <span className="text-[9px] uppercase font-mono tracking-[0.25em] text-luxury-gold-400/80 mt-1.5 block leading-none">
-                Indiranagar
+                Banglore
               </span>
             </div>
           </a>

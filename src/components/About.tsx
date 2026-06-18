@@ -25,8 +25,9 @@ export default function About() {
             >
               <div className="rounded-2xl overflow-hidden aspect-4/3 relative z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop"
-                  alt="Barista brewing specialty coffee carefully at Nuha patisserie and café"
+                  src="assets/item5.jfif"
+                  //src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop"
+                  alt="Nutella & Strawberry Pancakes at Nuha patisserie and café"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -36,9 +37,9 @@ export default function About() {
 
               {/* Floating golden experience badge */}
               <div className="absolute -bottom-6 -right-6 bg-espresso-950 text-white p-6 rounded-2xl shadow-2xl border border-luxury-gold-500/20 z-20 flex flex-col justify-center items-center text-center w-40 h-40">
-                <span className="font-serif text-3xl font-bold text-luxury-gold-400 block">Est.</span>
-                <span className="font-mono text-2xl font-bold text-white tracking-widest block">2018</span>
-                <span className="font-sans text-[9px] uppercase tracking-wider text-coffee-cream-300 mt-1 block">Indiranagar Craft</span>
+                <span className="font-serif text-3xl font-bold text-luxury-gold-400 block"></span>
+                <span className="font-mono text-2xl font-bold text-white tracking-widest block"></span>
+                <span className="font-sans text-[9px] uppercase tracking-wider text-coffee-cream-300 mt-1 block">Nutella & Strawberry Pancake</span>
               </div>
             </motion.div>
           </div>
