@@ -131,7 +131,7 @@ export const PASTRY_MENU: PastryItem[] = [
     name: "Classic chicken",
     description: "Simple, clean grilled chicken with cafe-style dressing and fresh greens.",
     price: 319,
-    image: "/assets/item1.jpg",
+    image: "/assets/SimpleChicken.jpg",
     tag: "Seasonal"
   }
 ];
