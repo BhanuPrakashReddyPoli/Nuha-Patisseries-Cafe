@@ -1,3 +1,4 @@
+
 import { MenuItem, PastryItem, TestimonialItem, GalleryImage, InstagramPost } from "./types";
 
 export const COFFEE_MENU: MenuItem[] = [
