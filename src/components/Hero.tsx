@@ -141,8 +141,8 @@ export default function Hero() {
             className="absolute bottom-4 left-2 sm:left-4 w-[65%] sm:w-64 h-[220px] sm:h-[240px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-20 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              //src="assets/item6_Coffee.jpg"
-              src="https://drive.google.com/file/d/1YLB7h2SWZlEP3CYZRCFSeE5T0rLxWOTw/view?usp=drive_link"
+              src="assets/item6_Coffee.jpg"
+              //src="https://drive.google.com/file/d/1YLB7h2SWZlEP3CYZRCFSeE5T0rLxWOTw/view?usp=drive_link"
               alt="Specialty latte art at Nuha patisserie and café"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"

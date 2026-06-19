@@ -123,7 +123,7 @@ export const PASTRY_MENU: PastryItem[] = [
     name: "Kheema with pav",
     description: "Spiced minced meat served hot with buttered pav.",
     price: 315,
-    image: "assets/item2.jpg",
+    image: "/assets/item2.jpg",
     tag: "Decadent"
   },
   {
@@ -131,7 +131,7 @@ export const PASTRY_MENU: PastryItem[] = [
     name: "Classic chicken",
     description: "Simple, clean grilled chicken with cafe-style dressing and fresh greens.",
     price: 319,
-    image: "assets/item1.jpg",
+    image: "/assets/item1.jpg",
     tag: "Seasonal"
   }
 ];
@@ -139,37 +139,37 @@ export const PASTRY_MENU: PastryItem[] = [
 export const GALLERY_PHOTOS: GalleryImage[] = [
   {
     id: "g1",
-    url: "assets/item6_Coffee.jpg",
+    url: "/assets/item6_Coffee.jpg",
     category: "brewing",
     caption: "Surgical extraction of our signature espresso blend, pulling slow and rich."
   },
   {
     id: "g2",
-    url: "assets/FrontDesk.jpg",
+    url: "/assets/FrontDesk.jpg",
     category: "ambience",
     caption: "Our main seating room featuring hand-crafted walnut furniture and custom brass lighting."
   },
   {
     id: "g3",
-    url: "assets/item6.jpg",
+    url: "/assets/item6.jpg",
     category: "desserts",
     caption: "Perfect afternoon pairings of house-baked pastries with freshly roasted coffee."
   },
   {
     id: "g4",
-    url: "assets/item4.jpg",
+    url: "/assets/item4.jpg",
     category: "brewing",
     caption: "Precision water pour-over during the bloom stage of the Geisha bean."
   },
   {
     id: "g5",
-    url: "assets/WorkSpace.jpg",
+    url: "/assets/WorkSpace.jpg",
     category: "ambience",
     caption: "Cozy velvet custom booths, providing ultimate privacy for deep conversations."
   },
   {
     id: "g6",
-    url: "assets/tiramisu.jpg",
+    url: "/assets/tiramisu.jpg",
     category: "moments",
     caption: "Warm smiles and exquisite crafts shared, making every morning a true celebration."
   }
@@ -182,7 +182,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Young & dynamic enterpreneur and director of Habibi Fried Chicken, Bengaluru.",
     review: "Nuha patisserie and café is a sanctuary. The espresso extraction parameters are perfect, but it's the warm lighting & rich walnut architecture that brings me here every morning to draft my layouts.",
     rating: 5,
-    image: "assets/ArbazSharief.jpg"
+    image: "/assets/ArbazSharief.jpg"
   },
   {
     id: "t2",
@@ -190,7 +190,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Indian restaurateur and entrepreneur.",
     review: "A hidden gem in the city. Great coffee, great service, and a very comfortable atmosphere.",
     rating: 5,
-    image: "assets/NavajSharif.jpg"
+    image: "/assets/NavajSharif.jpg"
   },
   {
     id: "t3",
@@ -198,35 +198,35 @@ export const TESTIMONIALS: TestimonialItem[] = [
     role: "Young & dynamic enterpreneur and director of Mashriq Mandi, Bengaluru.",
     review: "The almond croissant here sets a It is perfectly layered, butter-flaked, and pairs flawlessly with their Whiskey barrel aged slow-drip cold brew. Unforgettable afternoon tea.",
     rating: 5,
-    image: "assets/Faraz_Sharief.jpg"
+    image: "/assets/Faraz_Sharief.jpg"
   }
 ];
 
 export const INSTAGRAM_FEED: InstagramPost[] = [
   {
     id: "inst1",
-    url: "assets/CafeEntrance.jpg",
+    url: "/assets/CafeEntrance.jpg",
     likes: 420,
     comments: 28,
     caption: "Aesthetic interiors, artisan desserts, and authentic coffee experiences await beyond these doors."
   },
   {
     id: "inst2",
-    url: "assets/workspace.jpg",
+    url: "/assets/workspace.jpg",
     likes: 512,
     comments: 32,
     caption: "An inviting setting for client meetings, catch-ups, and moments worth sharing."
   },
   {
     id: "inst3",
-    url: "assets/Tables.jpg",
+    url: "/assets/Tables.jpg",
     likes: 680,
     comments: 47,
     caption: "A corner for readers, thinkers, and lovers of slow mornings. Find your sanctuary today. 🕯️🛋️ #luxurycafe #designinterior"
   },
   {
     id: "inst4",
-    url: "assets/FrontView.jpg",
+    url: "/assets/FrontView.jpg",
     likes: 395,
     comments: 19,
     caption: "Thoughtfully designed interiors, exceptional flavors, and an atmosphere made for relaxation and connection."
