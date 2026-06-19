@@ -6,10 +6,38 @@ import { Sparkles, MessageCircle, ArrowRight } from "lucide-react";
 export default function Pastries() {
 
   const handleOrderPastry = (pastryName: string) => {
-    const whatsappNumber = "+447700900077";
+    const whatsappNumber = "+919848902062"; // Use the same number as in WhatsAppButton
     const text = encodeURIComponent(`Hello! I'm on your website and would like to reserve or order the artisan pastry: "${pastryName}". Thank you!`);
     window.open(`https://wa.me/${whatsappNumber}?text=${text}`, "_blank", "noopener,noreferrer");
   };
+
+  //for handling custom cake ordering
+  const handleCustomCakeOrder = () => {
+  const whatsappNumber = "919848902062";
+
+  const text = encodeURIComponent(
+`Hello Cafe Nuha,
+
+I would like to order a custom celebration cake.
+
+Event Type:
+Date of Event:
+Number of Guests:
+Preferred Flavor:
+Theme/Design:
+Delivery or Pickup:
+
+Please share the available options, pricing, and ordering process.
+
+Thank you.`
+  );
+
+  window.open(
+    `https://wa.me/${whatsappNumber}?text=${text}`,
+    "_blank",
+    "noopener,noreferrer"
+  );
+};
 
   return (
     <section
@@ -33,12 +61,12 @@ export default function Pastries() {
               <span className="text-luxury-gold-600 italic font-medium">Butter & Lamination</span>
             </h2>
             <p className="font-sans text-sm md:text-base text-espresso-600 font-light leading-relaxed mt-4">
-              Our French pastry chef begins lamination at 3:00 AM, using AOP cultured Normandy butter and stone-ground heritage flour, creating pastries with crisp outer glass shells and honeycomb insides.
+              Our French pastry chef begins lamination at 7:00 AM, using AOP cultured Normandy butter and stone-ground heritage flour, creating pastries with crisp outer glass shells and honeycomb insides.
             </p>
           </div>
 
           <div className="flex items-center gap-1.5 self-start md:self-auto">
-            <span className="text-xs font-semibold text-espresso-800 uppercase tracking-widest">Fresh Batches Daily at 7:00 AM</span>
+            <span className="text-xs font-semibold text-espresso-800 uppercase tracking-widest">Fresh Batches Daily at 10:00 AM</span>
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
           </div>
         </div>
@@ -86,7 +114,7 @@ export default function Pastries() {
                       {pastry.name}
                     </h3>
                     <span className="font-serif text-base font-bold text-luxury-gold-600">
-                      ${pastry.price.toFixed(2)}
+                      ₹{pastry.price}
                     </span>
                   </div>
 
@@ -134,11 +162,11 @@ export default function Pastries() {
             </div>
             
             <button
-              onClick={() => handleOrderPastry("Whole Bespoke Cake Order")}
-              className="px-6 py-3.5 bg-linear-to-r from-luxury-gold-600 via-luxury-gold-500 to-luxury-gold-700 hover:from-luxury-gold-500 hover:to-luxury-gold-600 text-espresso-950 font-sans font-bold text-xs tracking-wider uppercase rounded-lg shadow-md hover:shadow-lg hover:shadow-luxury-gold-500/10 duration-300 w-full lg:w-auto text-center cursor-pointer"
-            >
-              Order Whole Custom Cake
-            </button>
+  onClick={handleCustomCakeOrder}
+  className="px-6 py-3.5 bg-linear-to-r from-luxury-gold-600 via-luxury-gold-500 to-luxury-gold-700 hover:from-luxury-gold-500 hover:to-luxury-gold-600 text-espresso-950 font-sans font-bold text-xs tracking-wider uppercase rounded-lg shadow-md hover:shadow-lg hover:shadow-luxury-gold-500/10 duration-300 w-full lg:w-auto text-center cursor-pointer"
+>
+  Order Whole Custom Cake
+</button>
           </div>
         </motion.div>
 

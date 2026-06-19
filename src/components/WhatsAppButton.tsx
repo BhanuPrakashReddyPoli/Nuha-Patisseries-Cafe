@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Customize with Nuha's real phone or a default format
-  const whatsappNumber = "+919876543210"; 
+  const whatsappNumber = "+919848902062"; 
   const defaultMessage = encodeURIComponent("Hello Nuha patisserie and café! I would like to book a table / enquire about your artisan pastries selection.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 

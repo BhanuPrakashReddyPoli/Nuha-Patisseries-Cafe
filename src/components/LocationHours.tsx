@@ -3,9 +3,8 @@ import { Clock, MapPin, Phone, Mail, Calendar } from "lucide-react";
 
 export default function LocationHours() {
   const schedule = [
-    { days: "Monday – Friday", hours: "07:00 am – 07:00 pm", note: "Kitchen closes at 6:30 pm" },
-    { days: "Saturday", hours: "08:00 am – 08:00 pm", note: "Kitchen closes at 7:30 pm" },
-    { days: "Sunday & Holidays", hours: "09:00 am – 06:00 pm", note: "All-day brunch served" }
+    { days: "Monday – Friday", hours: "10:00 am – 11:00 pm", note: "Kitchen closes at 10:30 pm" },
+    { days: "Saturday - Sunday", hours: "10:00 am – 12:00 pm", note: "Kitchen closes at 11:30 pm" },
   ];
 
   return (
@@ -23,11 +22,11 @@ export default function LocationHours() {
           {/* Left Column: Opening Schedule & Address Details */}
           <div className="lg:col-span-6 text-left">
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-luxury-gold-400 block mb-3">
-              Visit The Sanctuary
+              Welcome Anytime
             </span>
             <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl font-semibold tracking-tight leading-tight mb-8">
-              Hours of Crafted <br />
-              <span className="luxury-gradient-text italic font-medium">Warmth & Rest</span>
+              Open Daily for <br />
+              <span className="luxury-gradient-text italic font-medium">Coffee & Conversations</span>
             </h2>
 
             {/* Timings List */}
@@ -58,8 +57,8 @@ export default function LocationHours() {
                 <div>
                   <h4 className="font-serif text-sm font-bold text-white mb-1">Our Address</h4>
                   <p className="font-sans text-xs text-coffee-cream-300 font-light leading-relaxed">
-                    12th Main Road, <br />
-                    Indiranagar, Bengaluru, 560038
+                    12, Shri Krishna Temple Rd, <br />
+                    Indiranagar 1st Stage, Bengaluru, 560038
                   </p>
                 </div>
               </div>
@@ -88,7 +87,7 @@ export default function LocationHours() {
               className="p-3 bg-espresso-900/60 border border-luxury-gold-500/20 rounded-2xl shadow-2xl relative w-full h-[350px] md:h-[400px]"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15551.691741512467!2d77.62589574104276!3d12.97659345638104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a3cb98e4d3%3A0x8674d8efdfb6713c!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.885316452133!2d77.6418984!3d12.979186299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae175a98341b01%3A0xb85b579aa8972455!2sNuha%20patisserie%20and%20caf%C3%A9!5e0!3m2!1sen!2sin!4v1781857927812!5m2!1sen!2sin"
                 className="w-full h-full rounded-xl border border-luxury-gold-500/10 opacity-80 hover:opacity-100 transition-opacity duration-500 grayscale brightness-75 invert contrast-110"
                 style={{ border: 0 }}
                 allowFullScreen={true}

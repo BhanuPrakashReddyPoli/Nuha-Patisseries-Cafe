@@ -156,19 +156,19 @@ export const GALLERY_PHOTOS: GalleryImage[] = [
   },
   {
     id: "g4",
-    url: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop",
+    url: "assets/item4.jfif",
     category: "brewing",
     caption: "Precision water pour-over during the bloom stage of the Geisha bean."
   },
   {
     id: "g5",
-    url: "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop",
+    url: "assets/WorkSpace.jfif",
     category: "ambience",
     caption: "Cozy velvet custom booths, providing ultimate privacy for deep conversations."
   },
   {
     id: "g6",
-    url: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&auto=format&fit=crop",
+    url: "assets/tiramisu.jfif",
     category: "moments",
     caption: "Warm smiles and exquisite crafts shared, making every morning a true celebration."
   }
@@ -177,11 +177,11 @@ export const GALLERY_PHOTOS: GalleryImage[] = [
 export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: "t1",
-    name: "Eleanor Sterling",
-    role: "Architectural Designer",
+    name: "Arbaz Sharief",
+    role: "Young & dynamic enterpreneur and director of Habibi Fried Chicken, Bengaluru.",
     review: "Nuha patisserie and café is a sanctuary. The espresso extraction parameters are perfect, but it's the warm lighting & rich walnut architecture that brings me here every morning to draft my layouts.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+    image: "assets/ArbazSharief.jfif"
   },
   {
     id: "t2",
@@ -193,41 +193,41 @@ export const TESTIMONIALS: TestimonialItem[] = [
   },
   {
     id: "t3",
-    name: "Sophia Rossi",
-    role: "Culinary & Travel Editorial Writer",
-    review: "The almond croissant here sets a new gold standard. It is perfectly layered, butter-flaked, and pairs flawlessly with their Whiskey barrel aged slow-drip cold brew. Unforgettable afternoon tea.",
+    name: "Faraz Sharief",
+    role: "Young & dynamic enterpreneur and director of Mashriq Mandi, Bengaluru.",
+    review: "The almond croissant here sets a It is perfectly layered, butter-flaked, and pairs flawlessly with their Whiskey barrel aged slow-drip cold brew. Unforgettable afternoon tea.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+    image: "assets/Faraz_Sharief.jfif"
   }
 ];
 
 export const INSTAGRAM_FEED: InstagramPost[] = [
   {
     id: "inst1",
-    url: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop",
+    url: "assets/CafeEntrance.jfif",
     likes: 420,
     comments: 28,
-    caption: "Symmetric layers of gold and velvet crema. Morning essentials at Nuha patisserie and café. ☕✨ #specialtycoffee #cafenua #latteart"
+    caption: "Aesthetic interiors, artisan desserts, and authentic coffee experiences await beyond these doors."
   },
   {
     id: "inst2",
-    url: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop",
+    url: "assets/workspace.jfif",
     likes: 512,
     comments: 32,
-    caption: "Golden hour and the absolute perfect crisp. Fresh almond laminated pastries rising in our oven. 🥐🌙 #artisanbakery #luxurydesserts"
+    caption: "An inviting setting for client meetings, catch-ups, and moments worth sharing."
   },
   {
     id: "inst3",
-    url: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop",
+    url: "assets/Tables.jfif",
     likes: 680,
     comments: 47,
     caption: "A corner for readers, thinkers, and lovers of slow mornings. Find your sanctuary today. 🕯️🛋️ #luxurycafe #designinterior"
   },
   {
     id: "inst4",
-    url: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=600&auto=format&fit=crop",
+    url: "assets/FrontView.jfif",
     likes: 395,
     comments: 19,
-    caption: "Craft is in the patience. Watching the magical bloom of single-origin Geisha beans. 🧪💧 #specialtybrew #v60"
+    caption: "Thoughtfully designed interiors, exceptional flavors, and an atmosphere made for relaxation and connection."
   }
 ];

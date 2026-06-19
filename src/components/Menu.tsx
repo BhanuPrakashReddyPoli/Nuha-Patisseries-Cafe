@@ -100,7 +100,7 @@ export default function Menu() {
                       )}
                     </div>
                     <span className="font-serif text-lg font-bold text-luxury-gold-400 group-hover:text-luxury-gold-300 duration-300 whitespace-nowrap">
-                      ${item.price.toFixed(2)}
+                      ₹{item.price}
                     </span>
                   </div>
 
