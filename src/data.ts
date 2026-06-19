@@ -145,7 +145,7 @@ export const GALLERY_PHOTOS: GalleryImage[] = [
   },
   {
     id: "g2",
-    url: "/assets/FrontDesk.jpg",
+    url: "/assets/FrontDesk.png",
     category: "ambience",
     caption: "Our main seating room featuring hand-crafted walnut furniture and custom brass lighting."
   },
@@ -212,7 +212,7 @@ export const INSTAGRAM_FEED: InstagramPost[] = [
   },
   {
     id: "inst2",
-    url: "/assets/workspace.jpg",
+    url: "/assets/WorkSpace.jpg",
     likes: 512,
     comments: 32,
     caption: "An inviting setting for client meetings, catch-ups, and moments worth sharing."

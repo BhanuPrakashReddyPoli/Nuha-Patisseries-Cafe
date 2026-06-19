@@ -129,7 +129,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 right-4">
               <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1">Atmosphere</span>
-              <p className="font-serif text-sm font-semibold text-white leading-snug">The Fireside Lounge</p>
+              <p className="font-serif text-sm font-semibold text-white leading-snug"></p>
             </div>
           </motion.div>
 
