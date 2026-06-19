@@ -4,7 +4,7 @@ import { InstagramPost } from "../types";
 import { Heart, MessageCircle, Instagram, Sparkles } from "lucide-react";
 
 export default function InstagramFeed() {
-  const accountUrl = "https://instagram.com";
+  const accountUrl = "https://www.instagram.com/arbaz.0846?igsh=a29ub2VxOWs1Nmg4";
 
   return (
     <section

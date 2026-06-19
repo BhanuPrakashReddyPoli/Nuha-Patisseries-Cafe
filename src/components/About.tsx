@@ -25,7 +25,7 @@ export default function About() {
             >
               <div className="rounded-2xl overflow-hidden aspect-4/3 relative z-10">
                 <img
-                  src="assets/item5.jfif"
+                  src="assets/item5.jpg"
                   //src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop"
                   alt="Nutella & Strawberry Pancakes at Nuha patisserie and café"
                   className="w-full h-full object-cover"
