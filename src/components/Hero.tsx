@@ -120,7 +120,7 @@ export default function Hero() {
             className="absolute top-0 right-1 sm:right-6 w-[82%] sm:w-80 h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-10 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              src="assets/FrontDesk.jpg"
+              src="/assets/FrontDesk.jpg"
               alt="Nuha patisserie and café Interior Ambience"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
@@ -141,7 +141,7 @@ export default function Hero() {
             className="absolute bottom-4 left-2 sm:left-4 w-[65%] sm:w-64 h-[220px] sm:h-[240px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-20 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              src="assets/item6_Coffee.jpg"
+              src="/assets/item6_Coffee.jpg"
               //src="https://drive.google.com/file/d/1YLB7h2SWZlEP3CYZRCFSeE5T0rLxWOTw/view?usp=drive_link"
               alt="Specialty latte art at Nuha patisserie and café"
               className="w-full h-full object-cover hover:scale-105 duration-700"
@@ -162,7 +162,7 @@ export default function Hero() {
             className="absolute bottom-16 right-4 w-[40%] sm:w-44 h-[160px] sm:h-[180px] rounded-xl overflow-hidden shadow-2xl border border-luxury-gold-500/10 z-25 hover:border-luxury-gold-400/40 duration-500 hidden sm:block"
           >
             <img
-              src="assets/tiramisu.jpg"
+              src="/assets/tiramisu.jpg"
               //src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop"
               alt="Coffee kissed tiramisu at Nuha patisserie and café"
               className="w-full h-full object-cover hover:scale-105 duration-700"
