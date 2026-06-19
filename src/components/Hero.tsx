@@ -120,7 +120,7 @@ export default function Hero() {
             className="absolute top-0 right-1 sm:right-6 w-[82%] sm:w-80 h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-luxury-gold-500/20 z-10 hover:border-luxury-gold-400/40 duration-500"
           >
             <img
-              src="/assets/FrontDesk.jpg"
+              src="/assets/FrontDesk.png"
               alt="Nuha patisserie and café Interior Ambience"
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
