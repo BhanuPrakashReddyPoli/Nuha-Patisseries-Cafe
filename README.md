@@ -9,6 +9,22 @@ The platform showcases the café's ambience, menu offerings, signature desserts,
 
 https://nuha-patisseries-cafe.vercel.app
 
+# ☕ Cafe Nuha – Premium Patisserie & Café Website
+
+## Homepage Preview
+
+![Homepage](public/assets/website1.jpg)
+
+## Menu Showcase
+
+![Menu](public/assets/website3.jpg)
+
+## Coffee Section
+
+![Coffee](public/assets/website2.jpg)
+
+
+
 ## ✨ Features
 
 * Modern responsive user interface
