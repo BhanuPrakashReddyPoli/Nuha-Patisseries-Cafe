@@ -1,8 +1,9 @@
 # ☕ Cafe Nuha – Premium Patisserie & Café Website
 
-A modern and responsive landing website developed for **Cafe Nuha**, a premium patisserie and café located in Bengaluru.
+A modern and responsive website developed for **Cafe Nuha**, a premium patisserie and café in Bengaluru.
 
-The website showcases the café's ambience, signature menu items, desserts, customer testimonials, location details, opening hours, and direct WhatsApp inquiry functionality.
+The platform showcases the café's ambience, menu offerings, signature desserts, customer reviews, location details, opening hours, and provides direct customer engagement through WhatsApp-powered features including table reservations, custom cake orders, event inquiries, and bulk dessert requests.
+
 
 ## 🌐 Live Website
 
@@ -10,18 +11,49 @@ https://nuha-patisseries-cafe.vercel.app
 
 ## ✨ Features
 
-* Responsive modern UI
-* Premium café-inspired design
-* Hero section with branding
-* Menu showcase
-* Dessert & pastry gallery
-* Customer testimonials
-* Instagram-inspired gallery section
+* Modern responsive user interface
+* Premium café-inspired branding and design
+* Interactive hero section
+* Coffee, beverage, and dessert menu showcase
+* Pastry and signature item gallery
+* Customer testimonials section
+* Instagram-style ambience showcase
 * Google Maps location integration
-* Opening hours section
-* WhatsApp inquiry integration
-* Mobile-friendly design
+* Opening hours and contact information
+* Direct WhatsApp inquiry integration
+* WhatsApp table reservation workflow
+* WhatsApp custom cake ordering system
+* WhatsApp bulk dessert order requests
+* Event and celebration inquiry support
+* Mobile-friendly experience
+* Smooth animations and transitions
 * Vercel deployment
+
+## 🎯 Business Features
+
+### 📅 Table Reservations
+
+Customers can reserve tables directly through WhatsApp with pre-filled inquiry messages.
+
+### 🎂 Custom Cake Orders
+
+Customers can request customized celebration cakes for birthdays, anniversaries, and special occasions.
+
+### 🍰 Bulk Dessert Orders
+
+Supports inquiries for bulk dessert and pastry orders.
+
+### 🎉 Event & Celebration Inquiries
+
+Customers can reach out for private gatherings, corporate events, and special celebrations.
+
+### 📍 Location & Navigation
+
+Integrated location details and map support help customers easily find the café.
+
+### 📱 Instant Customer Communication
+
+All inquiries are routed directly to the business WhatsApp for faster response times.
 
 ## 🛠️ Tech Stack
 
