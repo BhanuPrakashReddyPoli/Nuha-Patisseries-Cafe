@@ -3,15 +3,19 @@ import { motion } from "motion/react";
 import { ArrowRight, Sparkles, ChevronDown } from "lucide-react";
 
 export default function Hero() {
-  const handleExploreClick = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
+  const handleExploreClick = (
+    e: React.MouseEvent<HTMLButtonElement>,
+    id: string,
+  ) => {
     e.preventDefault();
     const target = document.querySelector(id);
     if (target) {
       const navOffset = 76;
-      const targetTop = target.getBoundingClientRect().top + window.scrollY - navOffset;
+      const targetTop =
+        target.getBoundingClientRect().top + window.scrollY - navOffset;
       window.scrollTo({
         top: targetTop,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   };
@@ -50,8 +54,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-serif text-5xl md:text-6xl xl:text-7xl font-semibold text-white tracking-tight leading-[1.08] mb-6"
           >
-            Where Espresso <br />
-            <span className="luxury-gradient-text italic font-medium">Meets Fine Artistry</span>
+            <br />
+            <span className="luxury-gradient-text italic font-medium"></span>
           </motion.h1>
 
           <motion.p
@@ -60,8 +64,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-sans text-base md:text-lg text-coffee-cream-200 font-light leading-relaxed max-w-2xl mb-8"
           >
-            Step into an ambient sanctuary designed for deep conversations, slow mornings, and coffee enthusiasts. 
-            We pull rich extractions on customized brass machinery and bake 36-layer sourdough pastries daily.
+            Text?
           </motion.p>
 
           <motion.div
@@ -75,7 +78,10 @@ export default function Hero() {
               className="px-8 py-4 bg-linear-to-r from-luxury-gold-600 via-luxury-gold-500 to-luxury-gold-700 hover:from-luxury-gold-500 hover:to-luxury-gold-600 text-espresso-950 font-sans font-semibold text-sm rounded-lg hover:shadow-lg hover:shadow-luxury-gold-500/15 duration-300 focus:outline-none flex items-center justify-center gap-2 group cursor-pointer"
             >
               Explore Specialty Menu
-              <ArrowRight size={16} className="group-hover:translate-x-1 duration-300" />
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-1 duration-300"
+              />
             </button>
             <button
               onClick={(e) => handleExploreClick(e, "#contact")}
@@ -93,16 +99,28 @@ export default function Hero() {
             className="grid grid-cols-3 gap-4 border-t border-white/5 pt-8 mt-12"
           >
             <div>
-              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">100%</span>
-              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">Single-Origin Arabica</span>
+              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">
+                100%
+              </span>
+              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">
+                Single-Origin Arabica
+              </span>
             </div>
             <div>
-              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">36</span>
-              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">Artisan Lamination Layers</span>
+              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">
+                36
+              </span>
+              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">
+                Artisan Lamination Layers
+              </span>
             </div>
             <div>
-              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">3</span>
-              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">Award-Winning Master Baristas</span>
+              <span className="font-serif text-2xl font-bold text-luxury-gold-400 block pb-1">
+                3
+              </span>
+              <span className="font-mono text-[10px] tracking-wider text-coffee-cream-300 uppercase">
+                Award-Winning Master Baristas
+              </span>
             </div>
           </motion.div>
         </div>
@@ -111,8 +129,23 @@ export default function Hero() {
         <div className="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center py-6 h-[480px] lg:h-[550px] w-full">
           {/* Back Accent Ring */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 border border-luxury-gold-500/10 rounded-full z-0 hidden sm:block"></div>
-          
-          {/* Card 1: Main Cafe Ambience */}
+
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-[#b88a2a]/30 shadow-2xl">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="h-full w-full object-cover"
+            >
+              <source src="/assets/video.mp4" type="video/mp4" />
+            </video>
+
+            {/* Optional dark overlay for a premium look */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+          </div>
+          {/* Card 1: Main Cafe Ambience *
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 20 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -125,15 +158,17 @@ export default function Hero() {
               className="w-full h-full object-cover hover:scale-105 duration-700"
               referrerPolicy="no-referrer"
             />
-            {/* Dark gradient overlay */}
+            {/* Dark gradient overlay 
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 right-4">
-              <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1">Atmosphere</span>
+              <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1">
+                Atmosphere
+              </span>
               <p className="font-serif text-sm font-semibold text-white leading-snug"></p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Card 2: Exquisite Coffee Cup overlay */}
+          {/* Card 2: Exquisite Coffee Cup overlay
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 30, x: -20 }}
             animate={{ opacity: 1, scale: 1, x: 0, y: 0 }}
@@ -152,9 +187,9 @@ export default function Hero() {
               <span className="font-mono text-[9px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-1"></span>
               <p className="font-serif text-sm font-semibold text-white leading-snug">The Golden Cappuccino</p>
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Card 3: Artisan Bakery overlay */}
+          {/* Card 3: Artisan Bakery overlay
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: 40 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -170,16 +205,22 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-3 left-3 right-3">
-              <span className="font-mono text-[8px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-0.5">Kitchen</span>
-              <p className="font-serif text-xs font-semibold text-white leading-none">Tiramisu French Toast</p>
+              <span className="font-mono text-[8px] uppercase tracking-widest text-luxury-gold-400 font-bold block mb-0.5">
+                Kitchen
+              </span>
+              <p className="font-serif text-xs font-semibold text-white leading-none">
+                Tiramisu French Toast
+              </p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 
       {/* Floating Animated scroll indicator */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 opacity-60 hover:opacity-100 transition-opacity">
-        <span className="font-mono text-[9px] tracking-widest uppercase text-luxury-gold-400">Discover Nuha</span>
+        <span className="font-mono text-[9px] tracking-widest uppercase text-luxury-gold-400">
+          Discover Nuha
+        </span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}

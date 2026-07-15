@@ -14,7 +14,6 @@ export default function Testimonials() {
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-espresso-300/10 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">
           <span className="font-mono text-xs font-bold uppercase tracking-widest text-luxury-gold-600 block mb-3">
@@ -22,15 +21,22 @@ export default function Testimonials() {
           </span>
           <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl font-semibold text-espresso-900 tracking-tight leading-tight">
             Loved by Coffee Purists <br />
-            <span className="text-luxury-gold-600 italic font-medium">& Creative Minds</span>
+            <span className="text-luxury-gold-600 italic font-medium">
+              & Creative Minds
+            </span>
           </h2>
           <p className="font-sans text-sm md:text-base text-espresso-600 font-light leading-relaxed mt-4">
-            Hear from our community of designers, architects, culinary writers, and daily commuters who call Nuha patisserie and café their third space.
+            Hear from our community of designers, architects, culinary writers,
+            and daily commuters who call Nuha patisserie and café their third
+            space.
           </p>
         </div>
 
         {/* Testimonials Cards Grid */}
-        <div id="testimonials-cards-grid" className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          id="testimonials-cards-grid"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {TESTIMONIALS.map((review: TestimonialItem, index: number) => (
             <motion.div
               initial={{ opacity: 0, y: 25 }}
@@ -83,32 +89,20 @@ export default function Testimonials() {
                   </span>
                 </div>
               </div>
-
             </motion.div>
           ))}
         </div>
 
         {/* Global Press / Recommendation logos */}
         <div className="border-t border-espresso-800/10 mt-20 pt-12 text-center">
-          <span className="font-mono text-[9px] uppercase tracking-widest text-espresso-400 font-bold block mb-6">
-            Recognized & Featured In
-          </span>
+          <span className="font-mono text-[9px] uppercase tracking-widest text-espresso-400 font-bold block mb-6"></span>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-40 hover:opacity-60 duration-300">
-            <span className="font-serif text-lg font-bold tracking-tight text-espresso-800">
-              LONDON EATER
-            </span>
-            <span className="font-sans text-base font-extrabold tracking-widest text-espresso-800">
-              THE DESIGN FILE
-            </span>
-            <span className="font-serif text-lg font-bold italic tracking-wide text-espresso-800">
-              Vogue Dining
-            </span>
-            <span className="font-sans text-base font-bold tracking-normal text-espresso-800">
-              ROAST MAGAZINE
-            </span>
+            <span className="font-serif text-lg font-bold tracking-tight text-espresso-800"></span>
+            <span className="font-sans text-base font-extrabold tracking-widest text-espresso-800"></span>
+            <span className="font-serif text-lg font-bold italic tracking-wide text-espresso-800"></span>
+            <span className="font-sans text-base font-bold tracking-normal text-espresso-800"></span>
           </div>
         </div>
-
       </div>
     </section>
   );

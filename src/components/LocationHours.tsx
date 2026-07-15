@@ -3,8 +3,11 @@ import { Clock, MapPin, Phone, Mail, Calendar } from "lucide-react";
 
 export default function LocationHours() {
   const schedule = [
-    { days: "Monday – Friday", hours: "10:00 am – 11:00 pm", note: "Kitchen closes at 10:30 pm" },
-    { days: "Saturday - Sunday", hours: "10:00 am – 12:00 pm", note: "Kitchen closes at 11:30 pm" },
+    {
+      days: "Monday – Sunday",
+      hours: "10:00 am – 11:00 pm",
+      note: "Kitchen closes at 10:30 pm",
+    },
   ];
 
   return (
@@ -18,7 +21,6 @@ export default function LocationHours() {
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
           {/* Left Column: Opening Schedule & Address Details */}
           <div className="lg:col-span-6 text-left">
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-luxury-gold-400 block mb-3">
@@ -26,7 +28,9 @@ export default function LocationHours() {
             </span>
             <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl font-semibold tracking-tight leading-tight mb-8">
               Open Daily for <br />
-              <span className="luxury-gradient-text italic font-medium">Coffee & Conversations</span>
+              <span className="luxury-gradient-text italic font-medium">
+                Coffee & Conversations
+              </span>
             </h2>
 
             {/* Timings List */}
@@ -55,7 +59,9 @@ export default function LocationHours() {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-sm font-bold text-white mb-1">Our Address</h4>
+                  <h4 className="font-serif text-sm font-bold text-white mb-1">
+                    Our Address
+                  </h4>
                   <p className="font-sans text-xs text-coffee-cream-300 font-light leading-relaxed">
                     12, Shri Krishna Temple Rd, <br />
                     Indiranagar 1st Stage, Bengaluru, 560038
@@ -68,7 +74,9 @@ export default function LocationHours() {
                   <Calendar size={18} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-sm font-bold text-white mb-1">Reserve Space</h4>
+                  <h4 className="font-serif text-sm font-bold text-white mb-1">
+                    Reserve Space
+                  </h4>
                   <p className="font-sans text-xs text-coffee-cream-300 font-light leading-relaxed">
                     Reserve fireside booths & bespoke pastry buffets.
                   </p>
@@ -97,7 +105,6 @@ export default function LocationHours() {
               ></iframe>
             </motion.div>
           </div>
-
         </div>
       </div>
     </section>

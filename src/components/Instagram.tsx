@@ -4,7 +4,8 @@ import { InstagramPost } from "../types";
 import { Heart, MessageCircle, Instagram, Sparkles } from "lucide-react";
 
 export default function InstagramFeed() {
-  const accountUrl = "https://www.instagram.com/arbaz.0846?igsh=a29ub2VxOWs1Nmg4";
+  const accountUrl =
+    "https://www.instagram.com/cafe.nuha?igsh=NXZ0Zmsxdmhrc3p0";
 
   return (
     <section
@@ -15,7 +16,6 @@ export default function InstagramFeed() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-luxury-gold-700/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
       <div className="max-w-7xl mx-auto">
-        
         {/* Header containing brand and follow invitation */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-6">
           <div className="text-left">
@@ -26,7 +26,10 @@ export default function InstagramFeed() {
               </span>
             </div>
             <h2 className="font-serif text-2xl md:text-3xl font-semibold text-white tracking-tight">
-              Share The Ambience <span className="luxury-gradient-text italic font-medium">@cafenuha</span>
+              Share The Ambience{" "}
+              <span className="luxury-gradient-text italic font-medium">
+                @cafenuha
+              </span>
             </h2>
           </div>
 
@@ -42,7 +45,10 @@ export default function InstagramFeed() {
         </div>
 
         {/* Feed Grid */}
-        <div id="instagram-grid" className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <div
+          id="instagram-grid"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+        >
           {INSTAGRAM_FEED.map((post: InstagramPost, index: number) => (
             <motion.a
               initial={{ opacity: 0, scale: 0.96 }}
@@ -69,11 +75,14 @@ export default function InstagramFeed() {
               {/* Overlay Statistics & Information on Hover */}
               <div className="relative z-20 p-4 md:p-6 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 duration-300 w-full h-full">
                 <Instagram size={20} className="text-luxury-gold-400 mb-4" />
-                
+
                 {/* Stats Counter Row */}
                 <div className="flex items-center gap-4 text-white font-serif text-sm font-bold mb-3">
                   <div className="flex items-center gap-1.5">
-                    <Heart size={14} className="text-luxury-gold-400 fill-luxury-gold-400" />
+                    <Heart
+                      size={14}
+                      className="text-luxury-gold-400 fill-luxury-gold-400"
+                    />
                     {post.likes}
                   </div>
                   <div className="flex items-center gap-1.5">
@@ -87,11 +96,9 @@ export default function InstagramFeed() {
                   {post.caption}
                 </p>
               </div>
-
             </motion.a>
           ))}
         </div>
-
       </div>
     </section>
   );

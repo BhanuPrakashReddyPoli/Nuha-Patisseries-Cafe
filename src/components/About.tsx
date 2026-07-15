@@ -13,7 +13,6 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          
           {/* Left Column: Visual Showcase */}
           <div className="lg:col-span-6 relative">
             <motion.div
@@ -39,7 +38,9 @@ export default function About() {
               <div className="absolute -bottom-6 -right-6 bg-espresso-950 text-white p-6 rounded-2xl shadow-2xl border border-luxury-gold-500/20 z-20 flex flex-col justify-center items-center text-center w-40 h-40">
                 <span className="font-serif text-3xl font-bold text-luxury-gold-400 block"></span>
                 <span className="font-mono text-2xl font-bold text-white tracking-widest block"></span>
-                <span className="font-sans text-[9px] uppercase tracking-wider text-coffee-cream-300 mt-1 block">Nutella & Strawberry Pancake</span>
+                <span className="font-sans text-[9px] uppercase tracking-wider text-coffee-cream-300 mt-1 block">
+                  Nutella & Strawberry Pancake
+                </span>
               </div>
             </motion.div>
           </div>
@@ -51,13 +52,22 @@ export default function About() {
             </span>
             <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl font-semibold text-espresso-900 tracking-tight leading-tight mb-6">
               A Symphony of Slow <br />
-              <span className="text-luxury-gold-600 italic font-medium">Brewing & Master Baking</span>
+              <span className="text-luxury-gold-600 italic font-medium">
+                Brewing & Master Baking
+              </span>
             </h2>
             <p className="font-sans text-base text-espresso-600 font-light leading-relaxed mb-6">
-              Founded in 2018 in the cozy streets of Indiranagar, Nuha patisserie and café was envisioned as an acoustic and architectural sanctuary. We designed this space for coffee lovers, creative professionals, and those seeking quiet, deliberate minutes in a fast-paced world.
+              Founded in 2026 in the cozy streets of Indiranagar, Nuha
+              patisserie and café was envisioned as an acoustic and
+              architectural sanctuary. We designed this space for coffee lovers,
+              creative professionals, and those seeking quiet, deliberate
+              minutes in a fast-paced world.
             </p>
             <p className="font-sans text-base text-espresso-600 font-light leading-relaxed mb-8">
-              Every bean is selected from micro-lot estates committed to carbon-neutral shade-canopy growth. Our master roasters fire in micro-batches to unlock deep notes of stone fruit, velvet molasses, and clean jasmine.
+              Every bean is selected from micro-lot estates committed to
+              carbon-neutral shade-canopy growth. Our master roasters fire in
+              micro-batches to unlock deep notes of stone fruit, velvet
+              molasses, and clean jasmine.
             </p>
 
             {/* Core Pillars Grid */}
@@ -67,9 +77,12 @@ export default function About() {
                 <div className="w-9 h-9 rounded-lg bg-luxury-gold-100 flex items-center justify-center text-luxury-gold-600">
                   <Coffee size={18} />
                 </div>
-                <h3 className="font-serif text-sm font-bold text-espresso-900">Rare Microlots</h3>
+                <h3 className="font-serif text-sm font-bold text-espresso-900">
+                  Rare Microlots
+                </h3>
                 <p className="font-sans text-xs text-espresso-500 font-light leading-relaxed">
-                  Direct trade coffee ethically harvested from elite volcanic soils.
+                  Direct trade coffee ethically harvested from elite volcanic
+                  soils.
                 </p>
               </div>
 
@@ -78,7 +91,9 @@ export default function About() {
                 <div className="w-9 h-9 rounded-lg bg-luxury-gold-100 flex items-center justify-center text-luxury-gold-600">
                   <ShieldCheck size={18} />
                 </div>
-                <h3 className="font-serif text-sm font-bold text-espresso-900">Pure Butter Craft</h3>
+                <h3 className="font-serif text-sm font-bold text-espresso-900">
+                  Pure Butter Craft
+                </h3>
                 <p className="font-sans text-xs text-espresso-500 font-light leading-relaxed">
                   Croissants laminated by hand with real AOP French butter.
                 </p>
@@ -89,14 +104,15 @@ export default function About() {
                 <div className="w-9 h-9 rounded-lg bg-luxury-gold-100 flex items-center justify-center text-luxury-gold-600">
                   <Heart size={18} />
                 </div>
-                <h3 className="font-serif text-sm font-bold text-espresso-900">Acoustic Comfort</h3>
+                <h3 className="font-serif text-sm font-bold text-espresso-900">
+                  Acoustic Comfort
+                </h3>
                 <p className="font-sans text-xs text-espresso-500 font-light leading-relaxed">
                   Plush leather, quiet corners, and rich ambient soft focus.
                 </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
