@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import {
-  CheckCircle2,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Sparkles,
-} from "lucide-react";
+import { CheckCircle2, Mail, MapPin, Phone, Send } from "lucide-react";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykrzarb";
 
@@ -18,12 +11,11 @@ export default function Contact() {
     name: "",
     phone: "",
     email: "",
-    subject: "lounge-booking",
+    subject: "New-booking",
     message: "",
   });
 
   const [status, setStatus] = useState<SubmitStatus>("idle");
-  const [referenceId, setReferenceId] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -54,6 +46,12 @@ export default function Contact() {
     setErrorMessage("");
 
     try {
+      const submittedAtIndia = new Intl.DateTimeFormat("en-IN", {
+        timeZone: "Asia/Kolkata",
+        dateStyle: "long",
+        timeStyle: "medium",
+      }).format(new Date());
+
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: {
@@ -66,6 +64,9 @@ export default function Contact() {
           email: trimmedData.email,
           inquiryType: trimmedData.subject,
           message: trimmedData.message,
+
+          submittedAtIndia,
+
           source: "Nuha Patisserie and Cafe Website",
           _subject: `New Nuha Website Inquiry — ${trimmedData.subject}`,
         }),
@@ -84,14 +85,14 @@ export default function Contact() {
 
       const pinCode = `CN-${Math.floor(100000 + Math.random() * 900000)}`;
 
-      setReferenceId(pinCode);
+      // setReferenceId(pinCode);
       setStatus("success");
 
       setFormData({
         name: "",
         phone: "",
         email: "",
-        subject: "lounge-booking",
+        subject: "New-booking",
         message: "",
       });
     } catch (error) {
@@ -109,7 +110,6 @@ export default function Contact() {
 
   const resetForm = () => {
     setStatus("idle");
-    setReferenceId("");
     setErrorMessage("");
   };
 
@@ -282,7 +282,7 @@ export default function Contact() {
                               phone: e.target.value,
                             })
                           }
-                          placeholder="Eg: 9848902062"
+                          placeholder="Eg: 9848001234"
                           className="w-full rounded-xl border border-espresso-850/10 bg-coffee-cream-50/50 px-4 py-3.5 font-sans text-sm text-espresso-950 duration-300 focus:border-luxury-gold-500 focus:bg-white focus:outline-none"
                         />
                       </div>

@@ -62,10 +62,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            //Add hero text below this line
             className="font-sans text-base md:text-lg text-coffee-cream-200 font-light leading-relaxed max-w-2xl mb-8"
-          >
-            Text?
-          </motion.p>
+          ></motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
