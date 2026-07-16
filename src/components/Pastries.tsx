@@ -18,7 +18,7 @@ export default function Pastries() {
 
   //for handling custom cake ordering
   const handleCustomCakeOrder = () => {
-    const whatsappNumber = "917353775688"; // Use the same number as in WhatsAppButton
+    const whatsappNumber = "+917353775690"; // Use the same number as in WhatsAppButton
 
     const text = encodeURIComponent(
       `Hello Nuha Patisseries & Cafe,
