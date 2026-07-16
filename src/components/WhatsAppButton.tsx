@@ -6,12 +6,17 @@ export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Customize with Nuha's real phone or a default format
-  const whatsappNumber = "+917353775688"; 
-  const defaultMessage = encodeURIComponent("Hello Nuha patisserie and café! I would like to book a table / enquire about your artisan pastries selection.");
+  const whatsappNumber = "+917353775690";
+  const defaultMessage = encodeURIComponent(
+    "Hello Nuha patisserie and café! I would like to book a table / enquire about your artisan pastries selection.",
+  );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 
   return (
-    <div id="whatsapp-widget" className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+    <div
+      id="whatsapp-widget"
+      className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2"
+    >
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -26,10 +31,13 @@ export default function WhatsAppButton() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <p className="text-xs font-semibold uppercase tracking-wider text-luxury-gold-400">Nuha Concierge</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-luxury-gold-400">
+                Nuha Concierge
+              </p>
             </div>
             <p className="text-xs text-coffee-cream-100 font-sans leading-relaxed mb-3">
-              Reserve a fireside booth, pre-order whole cakes, or request private luxury dining. We reply in minutes.
+              Reserve a fireside booth, pre-order whole cakes, or request
+              private luxury dining. We reply in minutes.
             </p>
             <a
               href={whatsappUrl}
@@ -40,7 +48,10 @@ export default function WhatsAppButton() {
               <span className="flex items-center gap-1.5">
                 <MessageCircle size={14} /> Close chat & send Message
               </span>
-              <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <ArrowUpRight
+                size={14}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+              />
             </a>
           </motion.div>
         )}
