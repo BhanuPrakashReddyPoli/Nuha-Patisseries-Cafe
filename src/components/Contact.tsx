@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CheckCircle2, Mail, MapPin, Phone, Send } from "lucide-react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mykrzarb";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mgogopod";
 
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
@@ -82,8 +82,6 @@ export default function Contact() {
 
         throw new Error(formspreeError);
       }
-
-      const pinCode = `CN-${Math.floor(100000 + Math.random() * 900000)}`;
 
       // setReferenceId(pinCode);
       setStatus("success");
@@ -177,10 +175,10 @@ export default function Contact() {
                     </span>
 
                     <a
-                      href="mailto:faneateries@gmail.com"
+                      href="mailto:cafenuhaa@gmail.com"
                       className="font-serif text-base font-bold text-espresso-900 duration-300 hover:text-luxury-gold-600"
                     >
-                      faneateries@gmail.com
+                      cafenuhaa@gmail.com
                     </a>
                   </div>
                 </div>
@@ -430,7 +428,7 @@ export default function Contact() {
                     transition={{ type: "spring", stiffness: 100 }}
                     className="flex flex-col items-center px-4 py-8 text-center"
                   >
-                    <div className="mb-6 flex h-16 w-16 animate-bounce items-center justify-center rounded-full border-4 border-emerald-100 bg-emerald-50 text-emerald-500 shadow-md">
+                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full border-4 border-emerald-100 bg-emerald-50 text-emerald-500 shadow-md">
                       <CheckCircle2 size={32} />
                     </div>
 
@@ -447,20 +445,6 @@ export default function Contact() {
                       inquiry has been sent successfully, and our team will
                       contact you shortly.
                     </p>
-
-                    <div className="mb-8 w-full max-w-sm rounded-2xl border border-luxury-gold-500/25 bg-coffee-cream-100 p-6">
-                      <div className="mb-1 flex items-center justify-center gap-1.5 text-luxury-gold-600">
-                        <Sparkles size={14} />
-
-                        <span className="font-mono text-[9px] font-extrabold uppercase tracking-widest">
-                          Inquiry Reference
-                        </span>
-                      </div>
-
-                      <span className="font-mono text-xl font-bold tracking-wider text-espresso-950">
-                        {referenceId}
-                      </span>
-                    </div>
 
                     <button
                       type="button"
