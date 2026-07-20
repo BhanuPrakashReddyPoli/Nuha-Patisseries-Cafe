@@ -57,11 +57,15 @@ export default function About() {
               </span>
             </h2>
             <p className="font-sans text-base text-espresso-600 font-light leading-relaxed mb-6">
-              Founded in 2026 in the cozy streets of Indiranagar, Nuha
-              patisserie and café was envisioned as an acoustic and
-              architectural sanctuary. We designed this space for coffee lovers,
-              creative professionals, and those seeking quiet, deliberate
-              minutes in a fast-paced world.
+              Nuha Patisserie & Café is where timeless elegance meets
+              exceptional craftsmanship. Built on a passion for artisanal baking
+              and thoughtfully curated cuisine, Nuha brings together world-class
+              patisserie, specialty coffee, and globally inspired dishes in a
+              space designed to slow life down. Every dessert is handcrafted,
+              every plate is intentional, and every visit is created to feel
+              warm, refined, and memorable. More than just a café, Nuha is
+              redefining Bangalore’s café culture—one beautiful experience at a
+              time.
             </p>
             <p className="font-sans text-base text-espresso-600 font-light leading-relaxed mb-8">
               Every bean is selected from micro-lot estates committed to
